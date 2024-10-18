@@ -6,20 +6,30 @@
     <title>UX Hugo | Hugo Felix Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
+    <!-- Lucide icon library -->
+    <script src="https://unpkg.com/lucide" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          lucide.createIcons();
+        });
+    </script>
+    
 </head>
+
 <body>
 
     <div class="hero">
         <img src="#" alt="" class="avatar">
-        <h1>Hey! I’m Hugo, a Product Designer currently working at <a href="https://prezly.com" target="_blank" target="_blank" rel="noopener noreferrer">Prezly</a>!</h1>
+        <h1>Hey! I’m Hugo, a Product Designer currently working at <a href="https://prezly.com" target="_blank" target="_blank" rel="noopener noreferrer"><img class="inline-image" src="https://www.prezly.com/favicon.ico" alt="Prezly Logo" height="24" width="auto">Prezly</a>!</h1>
         <div class="actions">
-            <a href="mailto:hey@uxhugo.com">hey@uxhugo.com</a>
+            <div class="link"><i data-lucide="mail" class="icon-small"></i><a href="mailto:hey@uxhugo.com">hey@uxhugo.com</a></div>
             <button>
-                <img src="" alt="" class="btn-icon">
+                <i data-lucide="copy" class="icon-small"></i>
                 Copy Email
             </button>
         </div>
     </div>
-    
+
 </body>
+
 </html>
