@@ -5,31 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UX Hugo | Hugo Felix Portfolio</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
-    <!-- Lucide icon library -->
-    <script src="https://unpkg.com/lucide" defer></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          lucide.createIcons();
-        });
-    </script>
     
 </head>
 
 <body>
 
-    <div class="hero">
-        <img src="#" alt="" class="avatar">
-        <h1>Hey! I’m Hugo, a Product Designer currently working at <a href="https://prezly.com" target="_blank" target="_blank" rel="noopener noreferrer"><img class="inline-image" src="https://www.prezly.com/favicon.ico" alt="Prezly Logo" height="24" width="auto">Prezly</a>!</h1>
-        <div class="actions">
-            <div class="link"><i data-lucide="mail" class="icon-small"></i><a href="mailto:hey@uxhugo.com">hey@uxhugo.com</a></div>
-            <button>
-                <i data-lucide="copy" class="icon-small"></i>
-                Copy Email
-            </button>
+    <div class="content-wrapper">
+        
+        <div class="hero">
+           
+            <img src="./images/avatar.avif" alt="Hugo Felix Avatar" class="avatar">
+
+            <h1>Hey! I’m Hugo, a Product Designer <br> currently working at <a href="https://prezly.com" target="_blank" target="_blank" rel="noopener noreferrer">Prezly</a></h1>
+
+            <div class="hero-actions">
+                <a class="link-primary" href="mailto:hey@uxhugo.com">hey@uxhugo.com</a>
+                <button class="btn-primary" id="copyButton" onclick="copyText()">
+                    <i data-lucide="copy" class="icon-small"></i>
+                    Copy Email
+                </button>
+            </div>
+
+        </div>
+
+<!-- Work in Progress (Cards)
+
+        <div class="card-grid">
+
+            <div class="card">
+                <div class="card-wrapper">
+                
+                    <img src="./images/card-icon.png" alt="Apple Logo" class="card-logo">
+
+                    <h2 class="card-title">Check out some of my UI work on Layers.to</h2>
+
+                    <img src="./images/img-example.png" alt="Image placeholder" class="card-image">
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-wrapper">
+                
+                    <img src="./images/card-icon.png" alt="Apple Logo" class="card-logo">
+
+                    <h2 class="card-title">Check out some of my UI work on Layers.to</h2>
+
+                    <img src="./images/img-example.png" alt="Image placeholder" class="card-image">
+
+                </div>
+            </div>
+
         </div>
     </div>
 
+-->
+
+
+<!-- Link to the external script -->
+<script src="script.js" defer></script>
+<!-- Lucide icon library -->
+<script src="https://unpkg.com/lucide" defer></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        lucide.createIcons();
+    });
+</script>
 </body>
 
 </html>
